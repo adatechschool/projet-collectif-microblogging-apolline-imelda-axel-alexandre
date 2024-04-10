@@ -6,7 +6,7 @@ services:
         extra_hosts:
             - "host.docker.internal:host-gateway"
         ports:
-            - "${APP_PORT:-8000}:8000"
+            - "${APP_PORT:-8001}:8001"
             - "${VITE_PORT:-5173}:${VITE_PORT:-5173}"
         environment:
             IGNITION_LOCAL_SITES_PATH: "${PWD}"
